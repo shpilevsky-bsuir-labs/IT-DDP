@@ -4,7 +4,7 @@
 Web-site that helps you download and upload music and to share your musical tase with other people.
 
 Suggusted features:
-1. Upload/download images
+1. Upload/download music
 2. Night mode
 3. Display audiowaves of each track
 4. List of favourites track
