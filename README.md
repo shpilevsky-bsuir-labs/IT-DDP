@@ -14,11 +14,14 @@ Suggusted features:
 8. Add other users to your fav.playlists, because you liked their taste in music. This feature created to be in touch with that persons playlist
 
 Data models:
+
 User
   1. nickname
   2. avatar
   3. favourite_tracks
   4. Favourite users
+
+
 Track:
   1. Author
   2. Album
