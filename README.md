@@ -18,9 +18,15 @@ Data models:
 User
   1. nickname
   2. avatar
-  3. favourite_tracks
-  4. Favourite users
+  3. Favourite users
 
+Favourite_tracks:
+  1. user_id
+  2. track_id
+
+Favourite_users:
+  1. user_id
+  2. liked_user_id
 
 Track:
   1. Author
