@@ -1,0 +1,1153 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: radial-gradient(
+      circle,
+      rgba(202, 63, 251, 1) 26%,
+      rgba(230, 0, 245, 1) 70%
+    );
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0 20%;
+  }
+  
+  
+  nav {
+    /* gap: 2px; */
+    flex-direction: row;
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  
+  nav button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  main {
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-end; */
+  }
+  
+  nav input{
+    border-radius: 10em;
+    background: none;
+    color: white;
+    width: 25vw;
+    padding: 4px 5px;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    border-color: white;
+    border-width: 4px; 
+  }
+  
+  main img.album-image {
+    margin-left: 4vw;
+    display: block;
+    height: 30vh;
+    width: 25vw;
+    border-radius: 5%;
+  }
+  
+  div.track-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15vh;
+  }
+  
+  div.track-info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  span.title{
+    color: white;
+    font-size: 45px;
+  }
+  span.desc{
+  color: white;
+  font-size: 30px;
+  }
+  
+  footer {
+    position:relative;
+    bottom:0;
+    /* width:100%; */
+    background:none;
+  }
+  
+  img.iiiia {
+    margin-top: 4vh;
+    background: none;
+    height: 20vh;
+    width: 100%;
+  }
+  
+  img.play-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    left: -20%;
+    position: relative;
+  }
+  
+  div.player-controls-container {
+    flex-direction: row;
+    display: flex;
+  }
+  
+  img.like-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    /* right: -15%; */
+    position: relative;
+  }
+  
+  img.download-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    /* left: 100%; */
+    position: relative;
+  }
+  
+  div.track-info-small {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+    left: -15%;
+  }
+  
+  span.title-small {
+    color: white;
+    font-size: 45px;
+  }
+  
+  span.desc-small {
+    color: white;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  img.personal-photo {
+    background: none;
+    height: 7vh;
+    /* width: 100%; */
+    position: relative;
+  }
+  
+ }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-image: radial-gradient(
+      circle,
+      rgba(202, 63, 251, 1) 26%,
+      rgba(230, 0, 245, 1) 70%
+    );
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0 20%;
+  }
+  
+  
+  nav {
+    /* gap: 2px; */
+    flex-direction: row;
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  
+  nav button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  main {
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-end; */
+  }
+  
+  nav input{
+    border-radius: 10em;
+    background: none;
+    color: white;
+    width: 25vw;
+    padding: 4px 5px;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    border-color: white;
+    border-width: 4px; 
+  }
+  
+  main img.album-image {
+    margin-left: 4vw;
+    display: block;
+    height: 30vh;
+    width: 25vw;
+    border-radius: 5%;
+  }
+  
+  div.track-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15vh;
+  }
+  
+  div.track-info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  span.title{
+    color: white;
+    font-size: 45px;
+  }
+  span.desc{
+  color: white;
+  font-size: 30px;
+  }
+  
+  footer {
+    position:relative;
+    bottom:0;
+    /* width:100%; */
+    background:none;
+  }
+  
+  img.iiiia {
+    margin-top: 4vh;
+    background: none;
+    height: 20vh;
+    width: 100%;
+  }
+  
+  img.play-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    left: -20%;
+    position: relative;
+  }
+  
+  div.player-controls-container {
+    flex-direction: row;
+    display: flex;
+  }
+  
+  img.like-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    /* right: -15%; */
+    position: relative;
+  }
+  
+  img.download-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    /* left: 100%; */
+    position: relative;
+  }
+  
+  div.track-info-small {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+    left: -15%;
+  }
+  
+  span.title-small {
+    color: white;
+    font-size: 45px;
+  }
+  
+  span.desc-small {
+    color: white;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  img.personal-photo {
+    background: none;
+    height: 7vh;
+    /* width: 100%; */
+    position: relative;
+  }
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: radial-gradient(
+      circle,
+      rgba(202, 63, 251, 1) 26%,
+      rgba(230, 0, 245, 1) 70%
+    );
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0 20%;
+  }
+  
+  
+  nav {
+    /* gap: 2px; */
+    flex-direction: row;
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  
+  nav button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  main {
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-end; */
+  }
+  
+  nav input{
+    border-radius: 10em;
+    background: none;
+    color: white;
+    width: 25vw;
+    padding: 4px 5px;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    border-color: white;
+    border-width: 4px; 
+  }
+  
+  main img.album-image {
+    margin-left: 4vw;
+    display: block;
+    height: 30vh;
+    width: 25vw;
+    border-radius: 5%;
+  }
+  
+  div.track-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15vh;
+  }
+  
+  div.track-info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  span.title{
+    color: white;
+    font-size: 45px;
+  }
+  span.desc{
+  color: white;
+  font-size: 30px;
+  }
+  
+  footer {
+    position:relative;
+    bottom:0;
+    /* width:100%; */
+    background:none;
+  }
+  
+  img.iiiia {
+    margin-top: 4vh;
+    background: none;
+    height: 20vh;
+    width: 100%;
+  }
+  
+  img.play-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    left: -20%;
+    position: relative;
+  }
+  
+  div.player-controls-container {
+    flex-direction: row;
+    display: flex;
+  }
+  
+  img.like-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    right: -10%;
+    position: relative;
+  }
+  
+  img.download-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    left: 10%;
+    position: relative;
+  }
+  
+  div.track-info-small {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+    left: -15%;
+  }
+  
+  span.title-small {
+    color: white;
+    font-size: 45px;
+  }
+  
+  span.desc-small {
+    color: white;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  img.personal-photo {
+    background: none;
+    height: 7vh;
+    /* width: 100%; */
+    position: relative;
+  }
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-image: radial-gradient(
+      circle,
+      rgba(202, 63, 251, 1) 26%,
+      rgba(230, 0, 245, 1) 70%
+    );
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0 20%;
+  }
+  
+  
+  nav {
+    /* gap: 2px; */
+    flex-direction: row;
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  
+  nav button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  main {
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-end; */
+  }
+  
+  nav input{
+    border-radius: 10em;
+    background: none;
+    color: white;
+    width: 25vw;
+    padding: 4px 5px;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    border-color: white;
+    border-width: 4px; 
+  }
+  
+  main img.album-image {
+    margin-left: 4vw;
+    display: block;
+    height: 30vh;
+    width: 25vw;
+    border-radius: 5%;
+  }
+  
+  div.track-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15vh;
+  }
+  
+  div.track-info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  span.title{
+    color: white;
+    font-size: 45px;
+  }
+  span.desc{
+  color: white;
+  font-size: 30px;
+  }
+  
+  footer {
+    position:relative;
+    bottom:0;
+    /* width:100%; */
+    background:none;
+  }
+  
+  img.iiiia {
+    margin-top: 4vh;
+    background: none;
+    height: 20vh;
+    width: 100%;
+  }
+  
+  img.play-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    left: -20%;
+    position: relative;
+  }
+  
+  div.player-controls-container {
+    flex-direction: row;
+    display: flex;
+  }
+  
+  img.like-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    right: -20%;
+    position: relative;
+  }
+  
+  img.download-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    left: 20%;
+    position: relative;
+  }
+  
+  div.track-info-small {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+    left: -15%;
+  }
+  
+  span.title-small {
+    color: white;
+    font-size: 45px;
+  }
+  
+  span.desc-small {
+    color: white;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  img.personal-photo {
+    background: none;
+    height: 7vh;
+    /* width: 100%; */
+    position: relative;
+  }
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+body {
+  background-image: radial-gradient(
+    circle,
+    rgba(202, 63, 251, 1) 26%,
+    rgba(230, 0, 245, 1) 70%
+  );
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0 20%;
+}
+
+
+nav {
+  gap: 80px;
+  flex-direction: row;
+  display: flex;
+  margin-top: 2vh;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+nav button{
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+  width: 100%;
+  /* display: flex;
+  justify-content: flex-end; */
+}
+
+nav input{
+  border-radius: 10em;
+  background: none;
+  color: white;
+  width: 20%;
+  padding: 12px 20px;
+  font-size: 24px;
+  border-color: white;
+  border-width: 4px;
+}
+
+main img.album-image {
+  margin-left: auto;
+  display: block;
+  height: 40vh;
+  width: 30vw;
+  border-radius: 5%;
+}
+
+div.track-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+div.track-info{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+span.title{
+  color: white;
+  font-size: 60px;
+}
+span.desc{
+color: white;
+font-size: 45px;
+}
+
+footer {
+  position:relative;
+  bottom:0;
+  /* width:100%; */
+  background:none;
+}
+
+img.iiiia {
+  margin-top: 4vh;
+  background: none;
+  height: 20vh;
+  width: 100%;
+}
+
+img.play-button {
+  background: none;
+  height: 8vh;
+  width: 100%;
+  left: -100%;
+  position: relative;
+  /* padding-top: 5%; */
+}
+
+div.player-controls-container {
+  flex-direction: row;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+img.like-button {
+  background: none;
+  height: 8vh;
+  width: 100%;
+  right: -90%;
+  position: relative;
+}
+
+img.download-button {
+  background: none;
+  height: 8vh;
+  width: 100%;
+  left: 100%;
+  position: relative;
+}
+
+div.track-info-small {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* gap: 4px; */
+  left: -90%;
+}
+
+span.title-small {
+  color: white;
+  font-size: 45px;
+}
+
+span.desc-small {
+  color: white;
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+img.personal-photo {
+  background: none;
+  height: 7vh;
+  width: 100%;
+  position: relative;
+}
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+
+  body {
+    background-image: radial-gradient(
+      circle,
+      rgba(202, 63, 251, 1) 26%,
+      rgba(230, 0, 245, 1) 70%
+    );
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0 20%;
+  }
+  
+  
+  nav {
+    gap: 80px;
+    flex-direction: row;
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  
+  nav button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  main {
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-end; */
+  }
+  
+  nav input{
+    border-radius: 10em;
+    background: none;
+    color: white;
+    width: auto;
+    padding: 12px 20px;
+    font-size: 24px;
+    border-color: white;
+    border-width: 4px;
+  }
+  
+  main img.album-image {
+    margin-left: auto;
+    display: block;
+    height: 40vh;
+    width: 30vw;
+    border-radius: 5%;
+  }
+  
+  div.track-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15vh;
+  }
+  
+  div.track-info{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  span.title{
+    color: white;
+    font-size: 60px;
+  }
+  span.desc{
+  color: white;
+  font-size: 45px;
+  }
+  
+  footer {
+    position:relative;
+    bottom:0;
+    /* width:100%; */
+    background:none;
+  }
+  
+  img.iiiia {
+    margin-top: 4vh;
+    background: none;
+    height: 20vh;
+    width: 100%;
+  }
+  
+  img.play-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    left: -100%;
+    position: relative;
+    /* padding-top: 5%; */
+  }
+  
+  div.player-controls-container {
+    flex-direction: row;
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  
+  img.like-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    right: -90%;
+    position: relative;
+  }
+  
+  img.download-button {
+    background: none;
+    height: 8vh;
+    width: 100%;
+    left: 100%;
+    position: relative;
+  }
+  
+  div.track-info-small {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+    left: -90%;
+  }
+  
+  span.title-small {
+    color: white;
+    font-size: 45px;
+  }
+  
+  span.desc-small {
+    color: white;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  img.personal-photo {
+    background: none;
+    height: 7vh;
+    width: 6vw;
+    position: relative;
+  }
+  
+  }
+  
+  
