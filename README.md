@@ -1,4 +1,7 @@
 # IT-DDP Shpilevsky Nikita 953505
+#LINKS
+https://shpilevsky-bsuir-labs.github.io/IT-DDP/
+https://shpilevsky-bsuir-labs.github.io/IT-DDP/login
 
 # Project theme for 2nd block - Music Player
 Web-site that helps you download and upload music and to share your musical tase with other people.
