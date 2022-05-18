@@ -7,7 +7,7 @@ document.getElementsByClassName("collection")[0].onclick = function () {
 };
 
 function homeButtonOnClick() {
-  location.href = location.protocol + "//" + location.host + "/";
+  location.href = "./index.html";
 }
 
 function downloadTrack() {

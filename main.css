@@ -15,6 +15,11 @@ body > * {
   width: 100%;
 }
 
+body.dark {
+  background-color: black;
+  background-image: none;
+}
+
 nav {
   flex-direction: row;
   display: flex;
