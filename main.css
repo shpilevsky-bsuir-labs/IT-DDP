@@ -55,8 +55,8 @@ nav input {
 main img.album-image {
   margin-left: 4vw;
   display: block;
-  height: 30vh;
-  width: 25vw;
+  height: 300px;
+  width: 250px;
   border-radius: 5%;
 }
 
