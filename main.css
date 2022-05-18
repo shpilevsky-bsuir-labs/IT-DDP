@@ -88,6 +88,7 @@ footer {
   position: relative;
   bottom: 0;
   background: none;
+  flex-wrap: wrap;
 }
 
 img.iiiia {
@@ -102,11 +103,13 @@ img.play-button {
   height: 8vh;
   width: 100%;
   position: relative;
+  min-width: 40px;
 }
 
 div.player-controls-container {
   flex-direction: row;
   display: flex;
+  flex-wrap: wrap;
 }
 
 img.like-button {
@@ -114,6 +117,7 @@ img.like-button {
   height: 8vh;
   width: 100%;
   position: relative;
+  min-width: 40px;
 }
 
 img.download-button {
@@ -121,6 +125,7 @@ img.download-button {
   height: 8vh;
   width: 100%;
   position: relative;
+  min-width: 40px;
 }
 
 div.track-info-small {
@@ -282,5 +287,33 @@ canvas {
 @media screen and (max-width: 1200px) {
   body {
     margin: 0 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0 10%;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+
+  div.track-container {
+    margin-top: 7vh;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer {
+    flex-wrap: wrap;
+  }
+  span.title-small {
+    color: white;
+    font-size: 30px;
+  }
+
+  span.desc-small {
+    color: white;
+    font-size: 20px;
   }
 }
