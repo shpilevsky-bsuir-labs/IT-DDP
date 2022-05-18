@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./login.css" />
   </head>
   <body>
-    <form action="#!" id="main">
+    <form action="/" id="main">
       <h2>Login to your account</h2>
 
       <div class="input-parent">
@@ -20,7 +20,10 @@
         <input type="password" id="password" />
       </div>
 
-      <button type="submit">Login</button>
+      <button id="login" type="submit" onclick="loginButtonOnClick()">
+        Login
+      </button>
     </form>
+    <script src="./scripts/loginButtonClick.js"></script>
   </body>
 </html>

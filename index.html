@@ -8,19 +8,22 @@
   </head>
   <body>
     <nav class="navigation">
-      <button>Home</button>
-      <button>Collection</button>
+      <button onclick="homeButtonOnClick()" id="nav-item">Home</button>
+      <button class="collection" id="nav-item">Collection</button>
       <input type="search" name="" id="" />
-      <button>Upload</button>
+
+      <div class="upload-button-container">
+        <label id="upload-button" for="file-input">Upload</label>
+        <input hidden type="file" name="" id="file-input" />
+      </div>
+
       <div class="dropdown">
         <img class="personal-photo" src="./assets/n.jpg" class="dropbtn" />
-        <div class="dropdown-content" style="left: 0">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+        <div class="dropdown-content">
+          <a class="dark-mode-button" href="#">Toggle dark mode</a>
         </div>
       </div>
-      <button>Logout</button>
+      <button id="logout">Logout</button>
     </nav>
     <main>
       <div class="track-container">
@@ -30,22 +33,47 @@
         </div>
         <img class="album-image" src="./assets/n.jpg" alt="" />
       </div>
-      <img
-        class="iiiia"
-        src="./assets/sound_waves.png"
-        alt=""
-      />
+      <div class="canva-container"><canvas></canvas></div>
+
+      <audio
+        id="audio"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoptalk-clip.mp3"
+        hidden
+      ></audio>
     </main>
     <footer>
       <div class="player-controls-container">
-        <img class="play-button" src="./assets/play_button.png" alt="" />
-        <div class="track-info-small">
-          <span class="title-small">Track</span>
-          <span class="desc-small">Full description</span>
+        <div class="player-controls-item">
+          <img
+            class="play-button"
+            src="./assets/play_button.png"
+            alt=""
+            onclick="onClickPlayButton()"
+          />
+          <div class="track-info-small">
+            <span class="title-small">Track</span>
+            <span class="desc-small">Full description</span>
+          </div>
         </div>
-        <img class="like-button" src="./assets/like_button.png" alt="" />
-        <img class="download-button" src="./assets/download_button.png" alt="" />
+        <div class="player-controls-item">
+          <img
+            onclick="changeLikeImage()"
+            class="like-button"
+            src="./assets/like_black.png"
+            alt=""
+          />
+          <img
+            onclick="downloadTrack()"
+            class="download-button"
+            src="./assets/download_button.png"
+            alt=""
+          />
+        </div>
       </div>
     </footer>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/darkMode.js"></script>
+    <script src="./scripts/logout.js"></script>
+    <script src="./scripts/nav.js"></script>
   </body>
 </html>
