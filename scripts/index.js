@@ -89,8 +89,8 @@ function onClickPlayButton() {
 function changeImage() {
   var play_button = document.getElementsByClassName("play-button")[0];
   const root = location.protocol + "//" + location.host;
-  const play_button_location = root.concat("/assets/play_button.png");
-  const pause_button_location = root.concat("/assets/pause-button.png");
+  const play_button_location = root.concat("/IT-DDP/assets/play_button.png");
+  const pause_button_location = root.concat("/IT-DDP/assets/pause-button.png");
   if (play_button.src == play_button_location) {
     play_button.src = pause_button_location;
   } else {
@@ -101,8 +101,8 @@ function changeImage() {
 function changeLikeImage() {
   var play_button = document.getElementsByClassName("like-button")[0];
   const root = location.protocol + "//" + location.host;
-  const unlike_button_location = root.concat("/assets/like_white.png");
-  const like_button_location = root.concat("/assets/like_black.png");
+  const unlike_button_location = root.concat("/IT-DDP/assets/like_white.png");
+  const like_button_location = root.concat("/IT-DDP/assets/like_black.png");
   if (play_button.src == unlike_button_location) {
     play_button.src = like_button_location;
   } else {
