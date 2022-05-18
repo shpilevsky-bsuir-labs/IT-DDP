@@ -1,3 +1,3 @@
 function loginButtonOnClick() {
-  location.href = location.protocol + "//" + location.host + "/";
+  location.href = location.protocol + "//" + location.host + "/" + "IT-DDP/";
 }
