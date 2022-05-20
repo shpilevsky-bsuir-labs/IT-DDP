@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <button onclick="homeButtonOnClick()" id="nav-item">Home</button>
+      <button class="collection" id="nav-item">Collection</button>
+      <input type="search" name="" id="" />
+
+      <div class="upload-button-container">
+        <label id="upload-button" for="file-input">Upload</label>
+        <input hidden type="file" name="" id="file-input" />
+      </div>
+
+      <div class="dropdown">
+        <img class="personal-photo" src="./assets/n.jpg" class="dropbtn" />
+        <div class="dropdown-content">
+          <a class="dark-mode-button" href="#">Toggle dark mode</a>
+        </div>
+      </div>
+      <button id="logout">Logout</button>
+    </nav>
+    <main>
+      <div class="track-container">
+        <div class="track-info">
+          <span class="title">Track</span>
+          <span class="desc">Full description</span>
+        </div>
+        <img class="album-image" src="./assets/n.jpg" alt="" />
+      </div>
+      <div class="canva-container"><canvas></canvas></div>
+
+      <audio
+        id="audio"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoptalk-clip.mp3"
+        hidden
+      ></audio>
+    </main>
+    <footer>
+      <div class="player-controls-container">
+        <div class="player-controls-item">
+          <img
+            class="play-button"
+            src="./assets/play_button.png"
+            alt=""
+            onclick="onClickPlayButton()"
+          />
+          <div class="track-info-small">
+            <span class="title-small">Track</span>
+            <span class="desc-small">Full description</span>
+          </div>
+        </div>
+        <div class="player-controls-item">
+          <img
+            onclick="changeLikeImage()"
+            class="like-button"
+            src="./assets/like_black.png"
+            alt=""
+          />
+          <img
+            onclick="downloadTrack()"
+            class="download-button"
+            src="./assets/download_button.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/darkMode.js"></script>
+    <script src="./scripts/logout.js"></script>
+    <script src="./scripts/nav.js"></script>
+  </body>
+</html>
