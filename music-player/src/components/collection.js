@@ -2,12 +2,17 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./main.css";
 import Nav from "./nav";
+import { pathReference } from "./firebase";
+import { listAll } from "firebase/storage";
+
 const AlbumPicture = require("./assets/n.jpg");
 const playButton = require("./assets/play_button.png");
 const pauseButton = require("./assets/pause-button.png");
 const unlikeButton = require("./assets/like_white.png");
 const likedButton = require("./assets/like_black.png");
 const downloadButton = require("./assets/download_button.png");
+
+
 
 export default function Collection() {
   const [liked, setLiked] = useState(false);

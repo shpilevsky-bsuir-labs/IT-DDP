@@ -8,6 +8,7 @@ import {
   sendPasswordResetEmail,
   signOut,
 } from "firebase/auth";
+import { getStorage, ref } from "firebase/storage";
 import {
   getFirestore,
   query,
@@ -91,6 +92,9 @@ const sendPasswordReset = async (email) => {
 const logout = () => {
   signOut(auth);
 };
+
+const storage = getStorage(app);
+const pathReference = ref(storage);
 export {
   auth,
   db,
@@ -99,4 +103,6 @@ export {
   registerWithEmailAndPassword,
   sendPasswordReset,
   logout,
+  storage,
+  pathReference
 };

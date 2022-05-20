@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./main.css";
 import Nav from "./nav";
+import { pathReference, storage } from "./firebase";
+import { listAll, getDownloadURL, ref } from "firebase/storage";
 const AlbumPicture = require("./assets/n.jpg");
 const playButton = require("./assets/play_button.png");
 const pauseButton = require("./assets/pause-button.png");
@@ -76,31 +78,6 @@ const drawLineSegment = (ctx, x, height, width, isEven) => {
   ctx.stroke();
 };
 
-// import { User } from "./user.js";
-// document
-//   .getElementsByClassName("like-button")[0]
-//   .addEventListener("click", () => {
-//     changeLikeImage();
-//   });
-// function changeLikeImage() {
-//   var play_button = document.getElementsByClassName("like-button")[0];
-//   const root = location.protocol + "//" + location.host;
-//   const unlike_button_location = root.concat("/assets/like_white.png");
-//   const like_button_location = root.concat("/assets/like_black.png");
-//   if (play_button.src == unlike_button_location) {
-//     play_button.src = like_button_location;
-//   } else {
-//     play_button.src = unlike_button_location;
-//   }
-//   const user = {
-//     user_id: 1,
-//     name: "Nikita",
-//   };
-
-//   User.create(user).then(() => {
-//     console.log("created");
-//   });
-// }
 
 // async function uploadFile() {
 //   const fileInput = document.getElementById("file-input");
@@ -116,17 +93,34 @@ export default function Home() {
   const [paused, setPaused] = useState(false);
   const [redirectCollection, setRedirectCollection] = useState(false);
   const [redirectLogin, setRedirectLogin] = useState(false);
+  const [tracks, setTracks] = useState(listTrack);
   const navigate = useNavigate();
 
   function playTrack() {
     var audie = document.getElementById("audio");
+    console.log(audie.src);
     if (audie.paused == false) audie.pause();
     else audie.play();
   }
 
+  function listTrack() {
+    var trackk = [];
+    listAll(pathReference).then((res) => {
+      res.items.forEach((itemRef) => {
+        getDownloadURL(ref(storage, itemRef))
+        .then((url) => {
+          trackk.push(url)
+          console.log(url)
+        })
+      });
+    });
+    console.log(trackk)
+    return trackk;
+  }
+
   function downloadTrack() {
     console.log("down");
-    fetch("https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoptalk-clip.mp3")
+    fetch(tracks[0])
       .then((resp) => resp.blob())
       .then((blob) => {
         const url = window.URL.createObjectURL(blob);
@@ -154,9 +148,9 @@ export default function Home() {
   }
 
   useEffect(() => {
-    drawAudio(
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoptalk-clip.mp3"
-    );
+    listTrack();
+    drawAudio(tracks[0]);
+    console.log(tracks);
   });
 
   return (
@@ -180,8 +174,9 @@ export default function Home() {
         </div>
 
         <audio
+        src={tracks[0]}
           id="audio"
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoptalk-clip.mp3"
+          // src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoptalk-clip.mp3"
           hidden
         ></audio>
       </main>
